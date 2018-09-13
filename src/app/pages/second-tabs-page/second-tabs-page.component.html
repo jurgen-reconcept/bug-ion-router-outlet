@@ -3,17 +3,16 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Second tabs page</ion-title>
+    <ion-title>Second test page</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-router-outlet name="second"></ion-router-outlet>
+  Simple test page 2 - the routerLink button seems to work only once. But why?
 </ion-content>
 
 <ion-footer>
-  <ion-button href="/second/(second:tab4)">Tab 4</ion-button>
-  <ion-button href="/second/(second:tab5)">Tab 5</ion-button>
-  <ion-button href="/second/(second:tab6)">Tab 6</ion-button>
-  <ion-button href="/first">First Tabs Page</ion-button>
+  <ion-button color="success" href="/first">href /first</ion-button>
+  <ion-button color="danger" href="../first">href ../first</ion-button>
+  <ion-button color="danger" routerLink="../first">routerLink ../first</ion-button>
 </ion-footer>
